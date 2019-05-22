@@ -1,0 +1,506 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<script language="JavaScript" type="text/javascript">
+<!-- Copyright 2005, Sandeep Gangadharan -->
+<!-- For more free scripts go to http://www.sivamdesign.com/scripts/ -->
+<!--
+if (document.getElementById) {
+document.writeln('<style type="text/css"><!--')
+document.writeln('.texter {display:none} @media print {.texter {display:block;}}')
+document.writeln('//--></style>') }
+
+function openClose(theID) {
+if (document.getElementById(theID).style.display == "block") { document.getElementById(theID).style.display = "none" }
+else { document.getElementById(theID).style.display = "block" } }
+// -->
+</script>
+<script src="http://jwpsrv.com/library/If3mlj_ZEeSqECIACtqXBA.js"></script>
+<meta name="Description" content="Antony Lam" />
+<meta name="Keywords" content="Antony Lam,computer vision,ucr" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Distribution" content="Global" />
+<meta name="Author" content="Antony Lam - antonylam@cs.ucr.edu" />
+<meta name="Robots" content="index,follow" />
+
+<link rel="stylesheet" href="images/Envision.css" type="text/css" />
+
+<title>Antony Lam</title>
+	
+</head>
+
+<body>
+<!-- wrap starts here -->
+<div id="wrap">
+		
+		<!--header -->
+		<div id="header">			
+				
+			<h1 id="logo-text"><a href="index.html">Antony Lam</a></h1>		
+			
+			<div id="header-links">
+			<p>
+				<a href="index.html">Home</a>
+				<a href="contact.html">Contact</a>
+			</p>		
+		</div>		
+						
+		</div>
+		
+		<!-- menu -->	
+		<div  id="menu">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li id="current"><a href="research.html">Research</a></li>
+				<li><a href="code.html">Code</a></li>
+				<li><a href="Antony_Lam_CV.pdf" target="_blank">CV</a></li>
+				<li><a href="contact.html">Contact</a></li>		
+			</ul>
+		</div>					
+			
+		<!-- content-wrap starts here -->
+		<div id="content-wrap">
+			<div id="sidebar">
+				<h3>Code</h3>
+				<ul class="sidemenu">
+					<li><a href="code.html#sparseWavelengthsCode">Spectral Relighting of Reflective-Flourescent Scenes from Sparse Wavelengths</a></li>
+					<li><a href="code.html#denoiseCode">Denoising Hyperspectral Images Using Spectral Domain Statistics</a></li>
+				</ul>
+				<h3>Links</h3>
+				<ul class="sidemenu">
+					<li><a href="http://www.cv.ics.saitama-u.ac.jp/index_e.html" target="_blank">Kuno Computer Vision Laboratory</a></li>
+					<li><a href="http://www.nii.ac.jp/en/" target="_blank">National Institute of Informatics</a></li>
+					<li><a href="http://rlair.cs.ucr.edu/" target="_blank">Riverside Lab for Artificial Intelligence Research</a></li>
+					<li><a href="http://www.ee.ucr.edu/~amitrc/" target="_blank">Video Computing @ UCR</a></li>
+					<li><a href="http://www.hci.iis.u-tokyo.ac.jp/" target="_blank">Sato Laboratory, IIS, The University of Tokyo</a></li>
+					<li><a href="http://www1.cs.ucr.edu/index.php" target="_blank">UC Riverside Computer Science and Engineering</a></li>
+					<li><a href="http://www.mathworks.com/matlabcentral/fileexchange/" target="_blank">Matlab Central File Exchange</a></li>
+					<li><a href="http://www.phdcomics.com/" target="_blank">PhD Comics</a></li>
+				</ul>
+			
+												
+			</div>
+				
+			<div id="main">
+				
+				<a name="Publications"></a>
+				<h2>Select Publications</h2>
+				<a name="videoHeartRate"></a>
+				<b>
+					Robust Heart Rate Measurement from Video Using Select Random Patches (ICCV 2015)
+					<table class="no-spacing" cellspacing="0">
+						<tr>
+							<td>
+								<div onClick="openClose('a0')" style="cursor:hand; cursor:pointer"><s>[Summary]</s></div>
+							</td>
+							<td>
+								<a href="http://yankee.cv.ics.saitama-u.ac.jp/~kunolab/antonylam/papers/Robust_Heart_Rate_Measurement_from_Video_Using_Select_Random_Patches.pdf" target="_blank">[Paper]</a>
+							</td>
+						</tr>
+					</table>
+				</b>
+				<div id="a0" class="texter">
+				<p>We robustly estimate heart rate from the face using a consumer camera under changing light spectra. We show conditions under which linear ICA can be used to extract the cardiac pulse using pairs of face regions.</p>
+				<p class="centeredImage">
+					<img src="images/video_HR_flowchart1.jpg" alt="videoHRFlowchart" width="100%"/>
+					<img src="images/majorityVotedAveTrace1570cropped.jpg" alt="majorityVotedAveTrace1570cropped" width="100%"/>
+				</p>
+				<hr>
+				</div>
+				
+				<a name="hyperspectralDictionaryDenoising"></a>
+				<b>
+					Adaptive Spatial-Spectral Dictionary Learning for Hyperspectral Image Denoising (ICCV 2015)
+					<table class="no-spacing" cellspacing="0">
+						<tr>
+							<td>
+								<div onClick="openClose('a01')" style="cursor:hand; cursor:pointer"><s>[Summary]</s></div>
+							</td>
+							<td>
+								<a href="http://yankee.cv.ics.saitama-u.ac.jp/~kunolab/antonylam/papers/Adaptive_Spatial-Spectral_Dictionary_Learning_for_Hyperspectral_Image_Denoising.pdf" target="_blank">[Paper]</a>
+							</td>
+							<td>
+								<a href="http://yankee.cv.ics.saitama-u.ac.jp/~kunolab/antonylam/papers/Adaptive_Spatial-Spectral_Dictionary_Learning_for_Hyperspectral_Image_Restoration.pdf" target="_blank">[IJCV Paper]</a>
+							</td>
+						</tr>
+					</table>
+				</b>
+				<div id="a01" class="texter">
+				<p>We consider the sparsity across the spatial-spectral domain, high correlation across spectra, and non-local self-similarity over space to denoise hyperspectral images, resulting in state-of-the-art performance.</p>
+				<p class="centeredImage">
+					<img src="images/dictionary_hyperspectral_denoise_flowchart.jpg" alt="dictionary_hyperspectral_denoise_flowchart" width="100%"/>
+				</p>
+				<hr>
+				</div>
+				
+				<a name="fluorescent_reflective_single_hyperspectral"></a>
+				<b>
+					Separating Fluorescent and Reflective Components by Using a Single Hyperspectral Image (ICCV 2015)
+					<table class="no-spacing" cellspacing="0">
+						<tr>
+							<td>
+								<div onClick="openClose('a02')" style="cursor:hand; cursor:pointer"><s>[Summary]</s></div>
+							</td>
+							<td>
+								<a href="http://yankee.cv.ics.saitama-u.ac.jp/~kunolab/antonylam/papers/Separating_Fluorescent_and_Reflective_Components_by_Using_a_Single_Hyperspectral_Image.pdf" target="_blank">[Paper]</a>							</td>
+						</tr>
+					</table>
+				</b>
+				<div id="a02" class="texter">
+				<p>We separate fluorescent and reflective components in the spectral domain using only a single hyperspectral image. We first mathematically designed optimal illumination spectrum for the task and found that an off-the-shelf lamp is both cheap and effective. In addition, a fast linear separation algorithm was developed. We validate the proposed system in simulation and with real images.</p>
+				<p class="centeredImage">
+					<img src="images/fluorescent-reflective_sep_single_hyperspectral_image.jpg" alt="fluorescent_reflective_single_hyperspectral" width="100%"/>
+				</p>
+				<hr>
+				</div>
+
+				<a name="complementaryLightPhotoStereo"></a>
+				<b>
+					Color Photometric Stereo Using a Rainbow Light for Non-Lambertian Multicolored Surfaces (ACCV 2014)
+					<table class="no-spacing" cellspacing="0">
+						<tr>
+							<td>
+								<div onClick="openClose('a1')" style="cursor:hand; cursor:pointer"><s>[Summary]</s></div>
+							</td>
+							<td>
+								<a href="http://yankee.cv.ics.saitama-u.ac.jp/~kunolab/antonylam/papers/Color_Photometric_Stereo_Using_a_Rainbow_Light_for_Non-Lambertian_Multicolored_Surfaces.pdf" target="_blank">[Paper]</a>
+							</td>
+						</tr>
+					</table>
+				</b>
+				<div id="a1" class="texter">
+				<p>We make use of a ring of complementary lights to achieve photometric stereo for non-Lambertian surfaces.</p>
+				<p class="centeredImage">
+					<img src="images/complementaryColoredLights.jpg" alt="complementary_colored_lights" width="50%"/>
+					<img src="images/accvPhotometricStereo.jpg" alt="color_photometric_stero_results" width="40%"/>
+				</p>
+				<hr>
+				</div>
+				
+				<a name="directIndirectSep"></a>
+				<b>
+					Interreflection Removal Using Fluorescence (ECCV 2014)
+					<table class="no-spacing" cellspacing="0">
+						<tr>
+							<td>
+								<div onClick="openClose('a2')" style="cursor:hand; cursor:pointer"><s>[Summary]</s></div>
+							</td>
+							<td>
+								<a href="http://yankee.cv.ics.saitama-u.ac.jp/~kunolab/antonylam/papers/Interreflection_Removal_Using_Fluorescence.pdf" target="_blank">[Paper]</a>
+							</td>
+						</tr>
+					</table>
+				</b>
+				<div id="a2" class="texter">
+				<p>We exploit fluorescence to allow for single shot interreflection removal on object surfaces. We show complex shapes can be painted with consumer fluorescent paint to allow for direct and indirect lighting to be separated in scenes with complex dynamic motions.</p>
+				<center>
+					<div id='playerq6flBCGk'></div>
+					<script type='text/javascript'>
+						jwplayer('playerq6flBCGk').setup({
+							playlist: '//jwpsrv.com/feed/q6flBCGk.rss',
+							width: '100%',
+							aspectratio: '16:9'
+						});
+					</script>
+				</center>
+				<p class="centeredText">Separation of Direct Illumination from the Light Source and Indirect Lighting for a Moving Piece of Cloth</p>
+				<hr>
+				</div>
+				
+				<a name="multiLightFluorescence"></a>
+				<b>
+					Reflectance and Fluorescent Spectra Recovery based on Fluorescent Chromaticity Invariance under Varying Illumination (CVPR 2014, PAMI 2015)
+					<table class="no-spacing" cellspacing="0">
+						<tr>
+							<td>
+								<div onClick="openClose('a3')" style="cursor:hand; cursor:pointer"><s>[Summary]</s></div>
+							</td>
+							<td>
+								<a href="http://yankee.cv.ics.saitama-u.ac.jp/~kunolab/antonylam/papers/Reflectance_and_Fluorescent_Spectra_Recovery_based_on_Fluorescent_Chromaticity_Invariance_under_Varying_Illumination.pdf" target="_blank">[CVPR Paper]</a>
+							</td>
+							<td>
+								<a href="http://yankee.cv.ics.saitama-u.ac.jp/~kunolab/antonylam/papers/Reflectance_and_Fluorescence_Spectral_Recovery_via_Actively_Lit_RGB_Images_PAMI.pdf" target="_blank">[PAMI Paper]</a>
+							</td>
+						</tr>
+					</table>
+				</b>
+				<div id="a3" class="texter">
+				<p>In previous work, we used specialized cameras and lighting, which allows for high accuracy. This work aims to make reflective-fluorescent spectral imaging for scenes more accessible by using a conventional RGB camera with colored active lighting. We show that although accuracy was slightly degraded, we still achieved accurate recovery of all three spectral components from our conventional RGB camera.</p>
+				<p class="centeredImage">
+					<img src="images/multilight_fluorescence_framework.jpg" alt="multilight_fluorescence_framework" width="80%"/>
+				</p>
+				<hr>
+				</div>
+				
+				<a name="hifreqLights"></a>
+				<b>
+					Separating Reflective and Fluorescent Components Using High Frequency Illuminantion in the Spectral Domain (ICCV 2013, PAMI 2015)
+					<table class="no-spacing" cellspacing="0">
+						<tr>
+							<td>
+								<div onClick="openClose('a4')" style="cursor:hand; cursor:pointer"><s>[Summary]</s></div>
+							</td>
+							<td>
+								<a href="http://yankee.cv.ics.saitama-u.ac.jp/~kunolab/antonylam/papers/Separating_Reflective_and_Fluorescent_Components_Using_High_Frequency_Illumination_in_the_Spectral_Domain.pdf" target="_blank">[ICCV Paper]</a>
+							</td>
+							<td>
+								<a href="http://yankee.cv.ics.saitama-u.ac.jp/~kunolab/antonylam/papers/Separating_Reflective_and_Fluorescent_Components_Using_High_Frequency_Illumination_in_the_Spectral_Domain_PAMI.pdf" target="_blank">[PAMI Paper]</a>
+							</td>
+						</tr>
+					</table>
+				</b>
+				<div id="a4" class="texter">
+				<p>We use light spectra that are complementary to each other and have a high frequency in the spectral domain to extract three types of hyperspectral images from reflective-fluorescent scenes. These correspond to the reflectance spectra and fluorescence emission and absorption spectra. (All crucial components for fully modeling the color characteristics of the scenes.)</p>
+				<p class="centeredImage">
+					<img src="images/hifreq_spectra.jpg" alt="hifreq_spectra" width="80%"/>
+					<img src="images/iccv.jpg" alt="iccv" width="100%"/>
+				</p>
+				<hr>
+				</div>
+				
+				<a name="basisLights"></a>
+				<b>
+					Spectral Imaging Using Basis Lights (BMVC 2013)
+					<table class="no-spacing" cellspacing="0">
+						<tr>
+							<td>
+								<div onClick="openClose('a5')" style="cursor:hand; cursor:pointer"><s>[Summary]</s></div>
+							</td>
+							<td>
+								<a href="http://yankee.cv.ics.saitama-u.ac.jp/~kunolab/antonylam/papers/Spectral_Imaging_Using_Basis_Lights.pdf" target="_blank">[Paper]</a>
+							</td>
+						</tr>
+					</table>
+				</b>
+				<div id="a5" class="texter">
+				<p>The spectral reflectance of a scene provides a wealth of information for tasks ranging from color relighting to recognition. In this paper, we present an active lighting
+				based spectral imaging method that is accurate and highly robust to unknown ambient light. This is achieved through the use of &quot;basis lights&quot; (light spectra that
+				are analogous to basis vectors). We show what kinds of basis lights are optimal and that they can be well approximated in real life (even when negative values are present in a basis).</p>
+				<p class="centeredImage">
+					<img src="images/basis_lights_flowchart.jpg" alt="basislights" width="100%"/>
+				</p>
+				<hr>
+				</div>
+				
+				<a name="Spec_rf_relight"></a>
+				<b>
+					Spectral Modeling and Relighting of Reflective-Fluorescent Scenes (CVPR 2013)
+					<table class="no-spacing" cellspacing="0">
+						<tr>
+							<td>
+								<div onClick="openClose('a6')" style="cursor:hand; cursor:pointer"><s>[Summary]</s></div>
+							</td>
+							<td>
+								<a href="http://yankee.cv.ics.saitama-u.ac.jp/~kunolab/antonylam/papers/Spectral_Modeling_and_Relighting_of_Reflective-Fluorescent_Scenes.pdf" target="_blank">[Paper]</a>
+							</td>
+						</tr>
+					</table>
+				</b>
+				<div id="a6" class="texter">
+				<p>The spectral data of a scene allows for highly accurate color relighting of a scene. However past methods for capturing spectral data do not consider flourescent effects.
+				This is despite the presence of fluorescence in many everyday objects. We present a method for efficiently capturing reflective and fluorescent spectral data of entire scenes
+				and show our method produces color relighting results that are very close to ground truth.
+				<p class="centeredText"><a href="code.html#sparseWavelengthsCode"><font size="5">Try Our Matlab Demo</font></p></a>
+				<p class="centeredImage">
+					<img src="images/relighting.jpg" alt="relighting" width="100%"/>
+				</p>
+				<hr>
+				</div>
+				
+				<a name="Spec_Denoise"></a>
+				<b>
+					Denoising Hyperspectral Images Using Spectral Domain Statistics (ICPR 2012)
+					<table class="no-spacing" cellspacing="0">
+						<tr>
+							<td>
+								<div onClick="openClose('a7')" style="cursor:hand; cursor:pointer"><s>[Summary]</s></div>
+							</td>
+							<td>
+								<a href="http://yankee.cv.ics.saitama-u.ac.jp/~kunolab/antonylam/papers/Denoising_Hyperspectral_Images_Using_Spectral_Domain_Statistics.pdf" target="_blank">[Paper]</a>
+							</td>
+						</tr>
+					</table>
+				</b>
+				<div id="a7" class="texter">
+				<p>Hyperspectral images are useful for a wide variety of tasks ranging from satellite imaging to medical imaging.
+				Unfortunately, the narrowband images that make up such images can be noisy. We show that by explicitly considering
+				the statistics of the spectral domain, hyperspectral images can be denoised with state of the art results using a very simple method.</p>
+				<p class="centeredText"><a href="code.html#denoiseCode"><font size="5">Code</font></p></a>
+				<p class="centeredImage">
+					<br>
+					<a href="images/Flowchart_Denoise.jpg" target="_blank"><img src="images/Flowchart_Denoise.jpg" alt="flowchart_denoise" width="100%"/></a>					
+				</p>
+				<p class="centeredText">Flowchart of Our Method</p>
+				<p class="centeredImage">
+					<br>
+					<a href="images/CDREF31_06couscous500nm_Noisy.jpg" target="_blank"><img src="images/CDREF31_06couscous500nm_Noisy.jpg" alt="noisy" width="30%"/></a>
+					<a href="images/CDREF31_06couscous500nm_SCIDenoised.jpg" target="_blank"><img src="images/CDREF31_06couscous500nm_SCIDenoised.jpg" alt="denoised" width="30%"/></a>
+				</p>
+				<p class="centeredText">Noisy and denoised images from the 500 nm band of a hyperspectral image.</p>
+				<hr>
+				</div>
+				
+				<a name="Fly_Spots"></a>
+				<b>
+					Evaluation of Methods for Monitoring House Fly Abundance on Large Commercial Dairy Operations <br>(Journal of Economic Entomology 2011)
+					<table class="no-spacing" cellspacing="0">
+						<tr>
+							<td>
+								<div onClick="openClose('a8')" style="cursor:hand; cursor:pointer"><s>[Summary]</s></div>
+							</td>
+							<td>
+								<a href="http://yankee.cv.ics.saitama-u.ac.jp/~kunolab/antonylam/papers/Evaluation_of_Surveillance_Methods_for_Monitoring_House_Fly_Abundance_and_Activity_on_Large_Commercial_Dairy_Operations.pdf" target="_blank">[Paper]</a>
+							</td>
+						</tr>
+					</table>
+				</b>
+				<div id="a8" class="texter">
+				<p>We developed a system for automatic counting of fly spot cards (a tool used in entomology studies for measuring fly populations).
+				Fly spot cards are placed in farms and as flies land on them, they leave their waste on the cards. By observing the amount of waste, one can infer
+				trends in fly populations. (More waste means more flies were present.) Our automatic fly spot card counter was found to have a high correlation to
+				human expert counts in an extensive field test on large dairy operations.</p>
+				<p class="centeredImage">
+					<a href="images/annotated5.jpg" target="_blank"><img src="images/annotated5.jpg" alt="flyspots1" width="30%"/></a>
+					<a href="images/annotated12.jpg" target="_blank"><img src="images/annotated12.jpg" alt="flyspots2" width="30%"/></a>
+					<a href="images/annotated16.jpg" target="_blank"><img src="images/annotated16.jpg" alt="flyspots3" width="30%"/></a>
+				</p>
+				<p class="centeredText">Example images of scanned cards with fly waste and annotation of spots found by our algorithm. (Click to enlarge.)</p>
+				
+				<p class="centeredImage">
+					<img src="images/farm1.jpg" alt="farm1" width="40%"/>
+					<img src="images/farm2.jpg" alt="farm2" width="49%"/>
+				</p>
+				<p class="centeredText">Farms where tests were conducted.</p>
+				<hr>
+				</div>
+						
+				<a name="Video_Retrieval"></a>
+				<b>
+					Interactive Event Search Through Transfer Learning (ACCV 2010)
+					<table class="no-spacing" cellspacing="0">
+						<tr>
+							<td>
+								<div onClick="openClose('a9')" style="cursor:hand; cursor:pointer"><s>[Summary]</s></div>
+							</td>
+							<td>
+								<a href="http://yankee.cv.ics.saitama-u.ac.jp/~kunolab/antonylam/papers/Interactive_Event_Search_Through_Transfer_Learning.pdf" target="_blank">[Paper]</a>
+							</td>
+						</tr>
+					</table>
+				</b>
+				<div id="a9" class="texter">
+				<p>Relevance feedback (RF) allows a user to more precisely define what it is that they want to retrieve from a database.
+				In this work, we reduce the amount of user feedback needed through the use of transfer learning. Our main contribution
+				is the difficult problem of deciding what source knowledge to use in order to make transfer learning effective for RF. We
+				test our method using a combination of YouTube videos of our own and the <a href="http://www.cs.ucf.edu/~liujg/YouTube_Action_dataset.html" target="=blank">YouTube Action Dataset</a>.</p>
+
+				<p class="centeredImage">
+					<img src="images/volleyball_basketball.jpg" alt="boxing" width="90%"/>
+				</p>
+				<p class="centeredText">For example, if the user wanted to use RF to teach the computer what basketball videos are, we could
+				automatically select source knowledge about volleyball. This would reduce the number of training examples needed to learn 
+				what basketball videos are.</p>
+
+				<p></p>
+                    <p class="centeredImage">
+						<img src="images/boxing.jpg" alt="boxing" width="30%"/>
+						<img src="images/tango.jpg" alt="tango" width="30%"/>
+						<img src="images/f1.jpg" alt="f1" width="30%"/>
+					</p>
+				<p class="centeredText">Some sample clips of videos for testing retrieval of activities.</p>
+				<hr>
+				</div>				
+
+				<a name="Face_Rec"></a>
+				<b>
+					Face Recognition and Alignment Using Support Vector Machines (FG 2008)
+					<table class="no-spacing" cellspacing="0">
+						<tr>
+							<td>
+								<div onClick="openClose('a10')" style="cursor:hand; cursor:pointer"><s>[Summary]</s></div>
+							</td>
+							<td>
+								<a href="http://yankee.cv.ics.saitama-u.ac.jp/~kunolab/antonylam/papers/Face_Recognition_and_Alignment_Using_Support_Vector_Machines.pdf" target="_blank">[Paper]</a>
+							</td>
+						</tr>
+					</table>
+				</b>
+				<div id="a10" class="texter">
+				<p>Through the use of SVMs, we learned the relations between face patches over pose. We were then able to perform face recognition
+				over rotations as large as 90 degrees. In addition, we also propose a face alignment method based on SVMs.</p>
+ 				<p class="centeredImage">
+					<img src="images/faces.jpg" alt="face patches" width="70%"/>
+				</p>
+				<p class="centeredText">Example patches used in our system.</p>
+ 				<p class="centeredImage">
+					<img src="images/cmu_pie.jpg" alt="CMU PIE" width="80%"/>
+				</p>
+				<p class="centeredText">Face Poses in the CMU PIE Database</p>
+				<hr>
+				</div>
+				
+				<a name="Fab_Drape"></a>
+				<b>
+					Fabric Drape Prediction Using Neural Networks (IJCNN 2004)
+					<table class="no-spacing" cellspacing="0">
+						<tr>
+							<td>
+								<div onClick="openClose('a11')" style="cursor:hand; cursor:pointer"><s>[Summary]</s></div>
+							</td>
+							<td>
+								<a href="http://yankee.cv.ics.saitama-u.ac.jp/~kunolab/antonylam/papers/Neural_Network_Models_for_Fabric_Drape_Prediction.pdf" target="_blank">[Paper]</a>
+							</td>
+						</tr>
+					</table>
+				</b>
+				<div id="a11" class="texter">
+					<p>This work was mainly an application for textiles research. The goal was to predict certain charateristics of how a piece of fabric given its mechanical properties would
+					drape over a rigid surface. The particular characteristics were the "drape coefficient" and "circularity" which are measurements obtained from a device called the
+					Cusick Drape meter. Two neural network architectures were compared in their ability to learn the drape coefficient and circularity given seven mechanical properties.
+					</p>
+                    <p class="centeredImage">
+						<img src="images/cusick_drape2.jpg" alt="cusick drape meter" width="25%"/>
+					</p>
+					<p class="centeredText">Cusick Drape Meter</p>
+					<p class="centeredImage">
+						<img src="images/cusick_drape.jpg" alt="cusick drape image" width="25%"/>
+					</p>
+					<p class="centeredText">Image of a piece of fabric being measured with a Cusick Drape meter.</p>
+					<hr>
+				</div>
+			</div>
+		
+		<!-- content-wrap ends here -->	
+		</div>
+					
+		<!--footer starts here-->
+		<div id="footer">
+			
+			<p>
+			&copy; 2016 <strong>Antony Lam</strong> | 
+			Design by: <a href="http://www.styleshout.com/">styleshout</a> | 
+			Valid <a href="http://validator.w3.org/check?uri=referer">XHTML</a> | 
+			<a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a>
+			
+   		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			
+   		</p>
+				
+		</div>	
+
+<!-- wrap ends here -->
+</div>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-42636906-1', 'nii.ac.jp');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
