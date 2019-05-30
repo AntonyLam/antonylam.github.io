@@ -1,0 +1,350 @@
+%
+\documentclass[letterpaper,10pt]{article}
+\newlength{\outerbordwidth}
+\pagestyle{empty} %no page number
+\raggedbottom
+\raggedright
+\usepackage[T1]{fontenc}
+\usepackage[sc]{mathpazo}
+\linespread{1.05}
+\usepackage{hyperref}
+\usepackage{sectsty}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{url}
+\usepackage{CJKutf8}
+
+%-----------------------------------------------------------
+%Margin setup
+
+\setlength{\evensidemargin}{0.2in}
+\setlength{\headheight}{0in}
+\setlength{\headsep}{0in}
+\setlength{\oddsidemargin}{0.2in}
+\setlength{\paperheight}{11in}
+\setlength{\paperwidth}{8.5in}
+\setlength{\tabcolsep}{0in}
+\setlength{\textheight}{8.5in}
+\setlength{\textwidth}{6.0in}
+\setlength{\topmargin}{-0.3in}
+\setlength{\topskip}{0in}
+\setlength{\voffset}{0.5in}
+
+\def\name{Antony Lam}
+\def\Cplusplus{{\rm C\raise.3ex\hbox{\small ++}}}
+
+
+\hypersetup{
+  colorlinks = true,
+  urlcolor = black,
+  pdfauthor = {\name},
+  pdfkeywords = {computer science, graphics, software},
+  pdftitle = {\name: Resume},
+  pdfsubject = {Resume},
+  pdfpagemode = UseNone
+}
+
+\subsectionfont{\normalfont\bfseries}
+\subsubsectionfont{\normalfont\bfseries}
+\titlespacing{\subsection}{0pt}{0.5em}{0.5em}
+%-----------------------------------------------------------
+%Custom commands
+\newcommand{\myline}{ \rule{\textwidth}{0.01in} }
+
+\newenvironment{smallitemize}{
+  \begin{list}{$\bullet$}{
+    \setlength{\leftmargin}{3.5em}
+        \setlength{\topmargin}{-1.0em}
+    \setlength{\itemsep}{-0.10em}
+    \setlength{\parskip}{-0.8em}
+    \setlength{\parsep}{0.10em}
+  }
+}{
+  \end{list}
+}
+
+\renewcommand{\bf}{\bfseries}
+%-----------------------------------------------------------
+\usepackage{color}
+
+\begin{document}
+
+%%%%%%%%%%%%% NAME and ADDRESS %%%%%%%%%%%%%%%%%%%%%%%%
+{\huge\bf\name} \\
+%\vspace{0.3in}
+Email: antonylam AT mercari.com\\
+Website: \url{http://antonylam.jp}  \\
+\myline
+%%%%%%%%%%%%% OBJECTIVE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\subsection*{OBJECTIVE}
+%Fulltime position in software development
+%\myline
+
+%%%%%%%%%%%%%%% EDUCATION %%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+\subsection*{EDUCATION}
+\begin{tabularx}{\textwidth}{b{0.9\textwidth}r}
+        \bf{Ph.D. in Computer Science} & Sept. 2010 {} \\
+        %Dissertation: ``Learning Ranking Functions for Video Search on the Web'' & (Conferred Dec. 2010) {} \\
+                                Dissertation: ``Learning Ranking Functions for Video Search on the Web'' {} \\
+        Specialized in Computer Vision and Machine Learning \\
+        University of California, Riverside& {} \\  \vspace{0.1in}
+        \bf{B.S. in Computer Science} &  June 2004  {} \\
+        Minored in Mathematics, Graduated Magna Cum Laude & {} \\
+        California State Polytechnic University, Pomona& {} \\  \vspace{0.1in}  
+\end{tabularx}
+\myline
+
+%%%%%%%%%%%%%%% SKILLS SUMMARY %%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+
+%%%%%%%%%%%%%%% WORK EXPERIENCE %%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+\subsection*{EXPERIENCE}
+\begin{tabularx}{\textwidth}{b{0.82\textwidth}r}
+        \bf{Computer Vision Engineer, AI Engineering Team} & May 2019 - Present {} \\
+        {Mercari, Inc.} & {} \\
+\end{tabularx}
+%\vspace{0.03in}
+\begin{tabularx}{\textwidth}{b{0.82\textwidth}r}
+        \bf{Visiting Scientist} & Jan. 2015 - Present {} \\
+        {RIKEN Brain Science Institute, Saitama, Japan} & {} \\
+\end{tabularx}
+%\vspace{0.03in}
+\begin{tabularx}{\textwidth}{b{0.82\textwidth}r}
+        \bf{Collaborative Researcher} & Jan. 2015 - Present {} \\
+        {National Institute of Informatics, Tokyo, Japan} & {} \\
+\end{tabularx}
+%\vspace{0.03in}
+\begin{tabularx}{\textwidth}{b{0.82\textwidth}r}
+        \bf{Assistant Professor} & July 2014 - April 2019 {} \\
+        {Graduate School of Science and Engineering, Saitama University,
+Japan} & {} \\
+\end{tabularx}
+%\vspace{0.03in}
+\begin{tabularx}{\textwidth}{b{0.82\textwidth}r}
+        \bf{Project Researcher} & Oct. 2010 - June 2014 {} \\
+        Supervisor: Dr. Imari Sato & {} \\
+        {National Institute of Informatics, Tokyo, Japan} & {} \\
+\end{tabularx}
+\begin{smallitemize} \normalfont
+        \item Hyperspectral imaging of fluorescence and reflectance, denoising hyperspectral images using spectral domain statistics, photometric stereo using active colored lighting, reflectance analysis, imaging with active lighting.
+\end{smallitemize}
+%\vspace{0.03in}
+
+\begin{tabularx}{\textwidth}{b{0.795\textwidth}r}
+        \bf{Research Assistant} & June 2006 - Aug. 2010 {} \\
+        Supervisors: Dr. Christian R. Shelton and Dr. Amit K. Roy-Chowdhury & {} \\
+        {University of California, Riverside} &\\
+\end{tabularx}
+\begin{smallitemize} \normalfont
+        \item Relevance feedback \textbf{video retrieval} system for activities using \textbf{transfer learning}.
+        \item Developed system for \textbf{counting the frequency} of flies in large commercial dairy operations by automated visual counting of fly waste products.
+        \item Built a \textbf{face recognition} system that identifies whether two images of faces are of the same person despite large pose variations.
+\end{smallitemize}
+%\vspace{0.03in}
+
+\begin{tabularx}{\textwidth}{b{0.795\textwidth}r}
+        \bf{NSF EAPSI/JSPS Summer Fellow} & June 2009 - Aug. 2009 \\
+        Host Researchers: Dr. Yoichi Sato and Dr. Kris M. Kitani & {} \\
+        {The University of Tokyo} &\\
+\end{tabularx}
+\begin{smallitemize} \normalfont
+        \item Investigated Stochastic Context Free Grammar algorithms for retrieval of \textbf{video activities}.
+\end{smallitemize}
+%\vspace{0.03in}
+\pagebreak
+\begin{tabularx}{\textwidth}{b{0.795\textwidth}r}
+        \bf{Research Assistant} & June 2003 - Sept. 2003 \\
+        Supervisor: Dr. Amar Raheja & {} \\
+        {California State Polytechnic University, Pomona} &\\
+\end{tabularx}
+\begin{smallitemize} \normalfont
+        \item Tested application of Neural Network architectures to predict characteristics of how of fabric would drape over a rigid surface given its mechanical properties.
+\end{smallitemize}
+%\vspace{0.03in}
+\myline
+%%%%%%%%%%%%%%% AWARD %%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+\subsection*{PUBLICATIONS}
+Yuta Asano, Misaki Meguro, Chao Wang, \textbf{Antony Lam}, Yinqiang Zheng, Takahiro Okabe, and Imari Sato. ``Coded Illumination and Imaging for Fluorescence Based Classification.'' European Conference on Computer Vision (ECCV), Springer, 2018.\vspace{0.05in}\newline
+Keya Das, \textbf{Antony Lam}, Hisato Fukuda, Yoshinori Kobayashi, and Yoshinori Kuno. ``Classification of Emotions from Video Based Cardiac Pulse Estimation.'' International Conference on Intelligent Computing (ICIC), Springer, 2018. (Oral)\vspace{0.05in}\newline
+Aye Su Phyo, Hisato Fukuda, \textbf{Antony Lam}, Yoshinori Kobayashi, and Yoshinori Kuno. ``Natural Calling Gesture Recognition in Crowded Environments.'' International Conference on Intelligent Computing (ICIC), Springer, 2018. (Oral)\vspace{0.05in}\newline
+Sarwar Ali, Shamim Al Mamum, Hisato Fukuda, \textbf{Antony Lam}, Yoshinori Kobayashi, and Yoshinori Kuno. ``Smart Robotic Wheelchair for Bus Boarding Using CNN Combined with Hough Transforms.'' International Conference on Intelligent Computing (ICIC), Springer, 2018. \vspace{0.05in}\newline
+Shamim Al Mamun, Sarwar Ali, Hisato Fukuda, \textbf{Antony Lam}, Yoshinori Kobayashi, and Yoshinori Kuno. ``Companion Following Robotic Wheelchair with Bus Boarding Capabilities.'' In International Conference on Imaging, Vision \&\ Pattern Recognition, IEEE, 2018. (Best Paper) \vspace{0.05in}\newline
+Shijie Nie, Lin Gu, Yinqiang Zheng, \textbf{Antony Lam}, Nobutaka Ono, and Imari Sato. ``Deeply Learned Filter Response Functions for Hyperspectral Reconstruction.'' In IEEE Computer Vision and Pattern Recognition (CVPR), IEEE, 2018.\vspace{0.05in}\newline
+\begin{CJK}{UTF8}{min}Kouyou Otsu, Keya Das, Hisato Fukuda, \textbf{Antony Lam}, Yoshinori Kobayashi, and Yoshinori Kuno. ``映像解析に基づく頑健・高速な心拍数計測手法.'' In 24th Symposium on Sensing via Image Information (SSII), 2018. (Short Oral)\end{CJK}\vspace{0.05in}\newline
+\textbf{Antony Lam}, Kouyou Otsu, Keya Das, and Yoshinori Kuno. ``Towards Taking Pulses Over YouTube to Determine
+Interest in Video Content.'' In International Workshop on Frontiers of Computer Vision (IW-FCV), IEEE, 2018. (Oral)\vspace{0.05in}\newline
+Md. Golam Rashed, Ryota Suzuki, Takuya Yonezawa, \textbf{Antony Lam}, Yoshinori Kobayashi, and Yoshinori Kuno. ``Robustly Tracking People with LIDARs in a Crowded Museum for Behavioral Analysis.'' In IEICE Transactions on Fundamentals of Electronics, Communications and Computer Sciences, IEICE, 2017.\vspace{0.05in}\newline
+Yan Jia, Yinqiang Zheng, Lin Gu, Art Subpa-Asa, \textbf{Antony Lam}, Yoichi Sato, and Imari Sato. ``From RGB to Spectrum for Natural Scenes via Manifold-Based Mapping.'' In IEEE International Conference on Computer Vision (ICCV), IEEE, 2017.\vspace{0.05in}\newline
+Lu Cao, Hisato Fukuda, \textbf{Antony Lam}, and Yoshinori Kuno. ``Communicating Spatial Knowledge in Japanese for Interaction with Autonomous Robots.'' In IEEE International Symposium on Robot and Interactive Human Communication (RO-MAN), IEEE,
+2017. (Oral, finalist for the Distinguished Interdisciplinary Research Prize.)\vspace{0.05in}\newline\newline\newline
+\textbf{Antony Lam}, Topi Tanskanen, Chien-Hui Kao, Yoshinori Kuno, Keiji Tanaka, and Kang Cheng. ``Reconstructing Perceived Faces from Human Brain Activity.'' In 40th Annual Meeting of the Japan Neuroscience Society, JNS, 2017.\vspace{0.05in}\newline
+Keya Das, Sarwar Ali, Koyo Otsu, Hisato Fukuda,\textbf{ Antony Lam}, Yoshinori Kobayashi, and Yoshinori Kuno. ``Detecting Inner Emotions from Video Based Heart Rate Sensing.'' In 2017 International Conference on Intelligent Computing (ICIC), Springer, 2017. (Oral) \vspace{0.05in}\newline
+Shamim Al Mamun, \textbf{Antony Lam}, Yoshinori Kobayashi, and Yoshinori Kuno. ``Single Laser Bidirectional Sensing for Robotic Wheelchair Step Detection and Measurement.'' In 2017 International Conference on Intelligent Computing (ICIC), Springer, 2017. \vspace{0.05in}\newline
+\begin{CJK}{UTF8}{min}大津 耕陽、倉橋 知己、Keya Das、福田 悠人、Antony Lam、小林 貴訓、久野 義徳. ``環境変化に頑健なビデオ映像による心拍数計測手法.'' In 23rd Symposium on Sensing via Image Information (SSII), 2017. (Winner of Best Academic Prize)\end{CJK}\vspace{0.05in}\newline
+\textbf{Antony Lam} and Yoshinori Kuno. ``Towards Estimating Heart Rates from Video Under Low Light.'' In 12th International Symposium on Visual Computing (ISVC), Springer, 2016. \vspace{0.05in}\newline
+Hiroki Ohkawa, Yinqiang Zheng, \textbf{Antony Lam}, and Imari Sato. ``Spectral Reflectance Recovery with Interreflection Using a Hyperspectral Image.'' In 13th Asian Conference on Computer Vision (ACCV), Springer, 2016. \vspace{0.05in}\newline
+Md. Golam Rashed, Ryota Suzuki, Takuya Yonezawa, \textbf{Antony Lam}, Yoshinori Kobayashi, and Yoshinori Kuno. ``Tracking Visitors in a Real Museum for Behavioral Analysis.''  Joint 8th International Conference on Soft Computing and Intelligent Systems and 17th International Symposium on Advanced Intelligent Systems, IEEE, 2016.  \vspace{0.05in}\newline
+Shamim Al Mamum, Ryota Suzuki, \textbf{Antony Lam}, Yoshinori Kobayashi, and Yoshinori Kuno. ``Terrain Recognition for Smart Wheelchair.'' In 2016 International Conference on Intelligent Computing (ICIC), Springer, 2016.
+\vspace{0.05in}\newline
+Md. Abdul Mannan, \textbf{Antony Lam}, Yoshinori Kobayashi, and Yoshinori Kuno. ``Material Information Acquisition for Interactive Object Recognition by Service Robots.'' In IIEEJ Transactions on Image Electronics and Visual Computing, IIEEJ, 2016.\vspace{0.05in}\newline
+Ying Fu, \textbf{Antony Lam}, Imari Sato, and Yoichi Sato. ``Adaptive Spatial-Spectral Dictionary Learning for Hyperspectral Image Restoration.'' In International Journal of Computer Vision (IJCV), Springer, 2016.\vspace{0.05in}\newline
+\textbf{Antony Lam} and Yoshinori Kuno. ``Robust Heart Rate Measurement from Video Using Select Random Patches.'' In IEEE International Conference on Computer Vision (ICCV), IEEE, 2015.\vspace{0.05in}\newline
+Ying Fu, \textbf{Antony Lam}, Imari Sato, and Yoichi Sato. ``Adaptive Spatial-Spectral Dictionary Learning for Hyperspectral Image Denoising.'' In IEEE International Conference on Computer Vision (ICCV), IEEE, 2015.\vspace{0.05in}\newline
+Yinqiang Zheng, Ying Fu, \textbf{Antony Lam}, Imari Sato, and Yoichi Sato. ``Separating Fluorescent and Reflective Components by Using a Single Hyperspectral Image.'' In IEEE International Conference on Computer Vision (ICCV), IEEE, 2015.\vspace{0.05in}\newline
+Ying Fu, \textbf{Antony Lam}, Imari Sato, Takahiro Okabe, and Yoichi Sato. ``Separating Reflective and Fluorescent Components Using High Frequency Illumination in the Spectral Domain.'' In IEEE Transactions on Pattern Analysis and Machine Learning (PAMI), IEEE, 2015.\vspace{0.05in}\newline
+Ying Fu, \textbf{Antony Lam}, Imari Sato, Takahiro Okabe, and Yoichi Sato. ``Reflectance and Fluorescence Spectral Recovery via Actively Lit RGB Images.'' In IEEE Transactions on Pattern Analysis and Machine Learning (PAMI), IEEE, 2015.\vspace{0.05in}\newline
+Lu Cao, \textbf{Antony Lam}, Yoshinori Kobayashi, Yoshinori Kuno, and Daisuke Kachi. ``Understanding Spatial Knowledge: An Ontology-Based Representation for Object Identification.'' IIEEJ Transactions on Image Electronics and Visual Computing, IIEEJ, 2015.\vspace{0.05in}\newline
+Yoshinori Kuno, Satoru Goto, Yoshimi Matsuda, Toshiki Kikugawa, \textbf{Antony Lam}, and Yoshinori Kobayashi. ``Toward a Robot System Supporting Communication between People with Dementia and Their Relatives.'' IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), IEEE/RSJ, 2015.\vspace{0.05in}\newline
+Md.Golam Rashed, Ryota Suzuki, Toshiki Kikugawa, \textbf{Antony Lam}, Yoshinori Kobayashi, and Yoshinori Kuno. ``Network Guide Robot System Proactively Initiating Interaction with Visitors Based on Their Local and Global Behaviors.'' In 2015 International Conference on Intelligent Computing (ICIC), Springer, 2015. (Oral)\vspace{0.05in}\newline
+Md. Abdul Mannan, \textbf{Antony Lam}, Yoshinori Kobayashi, and Yoshinori Kuno. ``Facial Expression Recognition Based on Hybrid Approach.'' In 2015 International Conference on Intelligent Computing (ICIC), Springer, 2015. (Oral)\vspace{0.05in}\newline
+Md. Golam Rashed, Ryota Suzuki, \textbf{Antony Lam}, Yoshinori Kobayashi, and Yoshinori Kuno. ``Toward Museum Guide Robots Proactively Initiating Interaction with Humans.'' In 10th ACM/IEEE International Conference on Human-Robot Interaction (HRI), ACM, 2015.\vspace{0.05in}\newline
+\textbf{Antony Lam}, Yoshinori Kuno, and Imari Sato. ``Evaluating Freshness of Produce Using Transfer Learning.'' In  21st Korea-Japan Joint Workshop on Frontiers of Computer Vision (FCV), IEEE, 2015. (Oral)
+\vspace{0.05in}\newline
+Sejuti Rahman, \textbf{Antony Lam}, Imari Sato, and Antonio Robles-Kelly. ``Color Photometric Stereo Using a Rainbow Light for Non-Lambertian Multicolored Surfaces.'' In Asian Conference on Computer Vision (ACCV), Springer, 2014.
+\vspace{0.05in}\newline
+Ying Fu, \textbf{Antony Lam}, Yasuyuki Matsushita, Imari Sato, and Yoichi Sato. ``Interreflection Removal Using Fluorescence.'' In European Conference on Computer Vision (ECCV), Springer, 2014.
+\vspace{0.05in}\newline
+Ying Fu, \textbf{Antony Lam}, Yasuyuki Kobashi, Imari Sato, Takahiro Okabe, and Yoichi Sato. ``Reflectance and Fluorescent Spectra Recovery Using Variant Illuminations.'' In IEEE Computer Vision and Pattern Recognition (CVPR), IEEE, 2014. (Oral)
+\vspace{0.05in}\newline
+Ying Fu, \textbf{Antony Lam}, Imari Sato, Takahiro Okabe, and Yoichi Sato. ``Separating Reflective and Fluorescent Components Using High Frequency Illumination in the Spectral Domain.'' In IEEE International Conference on Computer Vision (ICCV), IEEE, 2013. (Oral)
+\vspace{0.05in}\newline
+\textbf{Antony Lam}, Art Subpa-Asa, Imari Sato, Takahiro Okabe, and Yoichi Sato. ``Spectral Imaging Using Basis Lights.'' In 24th British Machine Vision Conference (BMVC), BMVA, 2013.
+\vspace{0.05in}\newline
+\textbf{Antony Lam} and Imari Sato. ``Spectral Modeling and Relighting of Reflective-Fluorescent Scenes.'' In IEEE Computer Vision and Pattern Recognition (CVPR), IEEE, 2013.
+\vspace{0.05in}\newline
+\textbf{Antony Lam}, Imari Sato, and Yoichi Sato. ``Denoising Hyperspectral Images Using Spectral Domain Statistics.'' In 21st International Conference on Pattern Recognition (ICPR), IAPR, 2012. (Oral)
+\vspace{0.05in}\newline
+Alec C. Gerry, Gerald E. Higginbotham, Lea N. Pereira, \textbf{Antony Lam}, and Christian R. Shelton. ``Evaluation of Surveillance Methods for Monitoring House Fly Abundance and Activity on Large Commercial Dairy Operations.'' Journal of Economic Entomology, Entomological Society of America, 2011.
+\vspace{0.05in}\newline\newline\newline
+\textbf{Antony Lam}, Amit K. Roy-Chowdhury, and Christian R. Shelton. ``Interactive Event Search Through Transfer Learning.'' In 10th Asian Conference on Computer Vision (ACCV), Springer, 2010.
+\vspace{0.05in}\newline
+\textbf{Antony Lam} and Christian R. Shelton. ``Face Recognition and Alignment Using Support Vector Machines.'' In Automatic Face and Gesture Recognition (FG), IEEE, 2008.
+\vspace{0.05in}\newline
+\textbf{Antony Lam}, Amar Raheja, and Muthu Govindaraj. ``Neural Network Models for Fabric Drape Prediction.'' In International Joint Conference on Neural Networks (IJCNN), IEEE, 2004.
+\myline
+\subsection*{PATENT}
+\textbf{Antony Lam} and Yoshinori Kuno. '`Device and Method for Measuring
+Periodic Variation Linked to Heartbeat ({\begin{CJK}{UTF8}{min}\begin{small}心拍に連動する周期的変動の計測装置及び計測方法\end{small}\end{CJK}}).''
+Japanese Patent 6521845, Filed Nov. 22, 2015, Registered May 10, 2019. 
+\myline
+%%%%%%%%%%%%%%% ACTIVITIES %%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+\subsection*{GRANTS}
+\begin{tabularx}{\textwidth}{b{0.77\textwidth}r}
+\bfseries{Grant-in-Aid for Challenging Exploratory Research (KAKENHI), co-PI}
+ & {April 2017 - April 2019} \\
+\bfseries{(PI: Yoshinori Kuno)} \\
+        {\begin{CJK}{UTF8}{min}\begin{small}まばたき、まばたかれるロボットの目：まばたきを通じた情動の表現と認識\end{small}\end{CJK}} & {6.5 million JPY} \\
+        {\begin{small}\begin{footnotesize}Expression and Recognition of Emotion through Blinking between Humans and Robots\end{footnotesize}\end{small}} & {} \\
+        {Japan Society for the Promotion of Science} & {} \\ \vspace{0.05in}
+\bfseries{Grant-in-Aid for Young Scientists (B) (KAKENHI), sole PI} & {April 2017 - March 2019} \\
+        {\begin{CJK}{UTF8}{min}Real World Heart Rate Estimation from Video\end{CJK}} & {4.03 million JPY} \\
+        {Japan Society for the Promotion of Science} & {} \\ \vspace{0.05in} \bfseries{Tateisi Research Grant (A), sole PI} & {April 2016 - March 2018} \\
+        {\begin{CJK}{UTF8}{min}画像からの心拍数計測と表情認識を用いた感情状況の変動推定\end{CJK}} & {2.75 million JPY} \\
+        {Vision Based Emotion Estimation Using Heart Rate and Facial Expression} & {} \\
+        {Tateisi Science and Technology Foundation} & {} \\ \vspace{0.05in}
+\bfseries{Chancellor's \& College Dissertation Fellowship} & {Jan. 2010 - March 2010} \\
+        {University of California, Riverside} & {} \\ \vspace{0.05in}
+\bfseries{EAPSI Summer Fellowship} & {June 2009 - Aug. 2009} \\
+        {U.S. NSF and JSPS} & {} \\ \vspace{0.05in}
+\bfseries{Dean's Fellowship} & {Sept. 2005 - June 2006} \\
+        {University of California, Riverside} & {} \\ \vspace{0.05in}
+\bfseries{GAANN Fellowship} & {Sept. 2004 - Sept. 2005} \\
+        {U.S. Department of Education} & {} \\ \vspace{0.05in}
+\bfseries{Computer Science Scholarship} & {May 2004} \\
+        {The Boeing Company} & {} \\ \vspace{0.05in}
+\end{tabularx}
+
+\myline
+\subsection*{INVITED TALKS}
+``Interreflection Removal Using Fluorescence.''  MIRU 2015, Osaka, Japan,
+2015. (Presented by Ying Fu.)\newline
+``Spectral Reflectance and Fluorescence Imaging.'' University of Ulsan, South
+Korea, Jan. 26, 2015.\newline
+``Separating Reflective and Fluorescent Components Using High Frequency Illumination
+in the Spectral Domain.'' MIRU 2014, Okayama, Japan, 2014.
+\myline
+\subsection*{AWARDS}
+\begin{tabularx}{\textwidth}{b{0.77\textwidth}r}
+\bfseries{Robust Heart Rate Estimation from Video} & {\textcolor[rgb]{1,1,1}{ssdfsdfadfdf}June 2018} \\
+{\begin{CJK}{UTF8}{min}\begin{small}環境変化に頑健なビデオ映像による心拍数計測手法\end{small}\end{CJK}} & {} \\
+\textbf{Best Academic Prize} \begin{CJK}{UTF8}{min}(最優秀学術賞)\end{CJK} & {} \\
+        {23rd Symposium on Sensing via Image Information} & {} \\ \vspace{0.05in}
+\bfseries{\begin{small}\textbf{Companion Following Robotic Wheelchair with Bus Boarding Capabilities}\end{small}} & {June 2018} \\
+\textbf{Best Paper}& {} \\
+        {International Conference on Imaging, Vision \&\ Pattern Recognition} & {} \vspace{0.05in} \\
+\end{tabularx}
+%\pagebreak
+
+%%%%%%%%%%%%%%% ACTIVITIES %%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+\myline
+
+\subsection*{PROFESSIONAL ACTIVITIES}
+Reviewer for Transactions on Circuits and Systems for Video Technology (TCSVT), Transactions on Image Processing (TIP), Machine Vision and Applications (MVA), Asian Conference on Computer Vision (ACCV), International Conference on Pattern Recognition (ICPR), and Computer Vision and Pattern Recognition (CVPR), International Conference on Intelligent Computing (ICIC), Neural Information Processing Systems (NIPS), International Conference on Intelligent Robots and Systems (IROS).
+Member of Institute of Electrical and Electronics Engineers (IEEE), Information Processing Society of Japan (IPSJ),  and Japan Neuroscience Society (JNS).
+
+\myline
+\subsection*{TEACHING}
+\begin{tabularx}{\textwidth}{b{0.91\textwidth}r}
+        \bf{Guest Lecture on Hyperspectral Imaging} & Jan. 2014\\
+        {National Institute of Informatics, Tokyo, Japan} &\\
+\end{tabularx}
+
+%\begin{smallitemize} \normalfont
+%       \item Invited talk on hyperspectral imaging and applications.
+%\end{smallitemize}
+%\vspace{0.03in}
+\begin{tabularx}{\textwidth}{b{0.778\textwidth}r}
+        \bf{Teaching Assistant} & Sept. 2004 - June 2006\\
+        {University of California, Riverside} &\\
+\end{tabularx}
+\begin{smallitemize} \normalfont
+        \item Introduction to Computing, Introduction to Engineering, Introduction to Data Structures and Algorithms, Artificial Intelligence.
+\end{smallitemize}
+%\vspace{0.03in}
+
+\begin{tabularx}{\textwidth}{b{0.78\textwidth}r}
+        \bf{Tutor} & Sept. 2003 - June 2004\\
+        {California State Polytechnic University, Pomona} &\\
+\end{tabularx}
+\begin{smallitemize} \normalfont
+        \item Tutored for Computer Science courses in programming and data structures.
+\end{smallitemize}
+%\vspace{0.03in}
+\begin{tabularx}{\textwidth}{b{0.79\textwidth}r}
+        \bf{Grader} & Jan. 2001 - Mar. 2002\\
+        {California State Polytechnic University, Pomona} &\\
+\end{tabularx}
+\begin{smallitemize} \normalfont
+        \item Introduction to Computer Science, Introduction to Programming and Problem Solving, Introduction to C++, Discrete Mathematics.
+\end{smallitemize}
+%\vspace{0.03in}
+%\pagebreak
+\myline
+%\vspace{-65}
+%%%%%%%%%%%%%%% ACTIVITIES %%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+\subsection*{LANGUAGES}
+\vspace{0.08in}
+\begin{smallitemize} \normalfont
+        \item English (native), Japanese (intermediate), Mandarin (conversational speaking), Cantonese (fluent speaking)
+\end{smallitemize}
+\vspace{-0.05in}
+\pagebreak
+\myline
+%%%%%%%%%%%%%%% ACTIVITIES %%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+\subsection*{REFERENCES}
+\vspace{-0.1in}
+\textbf{\\ Dr. Yoshinori Kuno}, Saitama University, Japan\\
+kuno at cv.ics.saitama-u.ac.jp
+
+\textbf{Dr. Imari Sato}, National Institute of Informatics, Tokyo, Japan\\
+imarik at nii.ac.jp
+
+\textbf{Dr. Yoichi Sato}, The University of Tokyo, Japan\\
+ysato at iis.u-tokyo.ac.jp
+
+\textbf{Dr. Christian R. Shelton}, Department of Computer Science \& Engineering, UC Riverside\\
+cshelton at cs.ucr.edu
+
+\textbf{Dr. Amit K. Roy-Chowdhury}, Department of Electrical Engineering, UC Riverside\\
+amitrc at ee.ucr.edu
+
+\end{document}
